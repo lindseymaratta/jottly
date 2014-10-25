@@ -52,7 +52,7 @@ h5 {
  	font-style: italic;
  }
 
- footer h4 {
+ #footer h4 {
  	color: #ffffff;
  }
  #how-to h5 {
@@ -89,7 +89,7 @@ p {
 
 /* list styles */
 
-footer li:first-child {
+#footer li:first-child {
 	font-size: 30px;
 	line-height: 2;
 };
@@ -198,8 +198,9 @@ header nav ul li a:hover{
 
 
 
-footer {
+#footer {
 	background: #b4c3c3;
+	color: #ffffff;
 }
 
 
