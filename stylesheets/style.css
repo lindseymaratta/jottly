@@ -397,18 +397,24 @@ header nav ul li a:hover{
 	   .left-nav {
 	   	float: none;
 	   text-align: center;
+	   margin-top: 10px
 		}
 		.right-nav {
 			float: none;
 		}
-		.right-nav button{
-			margin: 20px;
-		}
-
 		.right-nav ul {
 			float:none;
 		}
-		
+		.right-nav  ul li {
+			background: rgba(255, 255, 255, .2);
+			padding: 20px;
+		}
+
+		.right-nav li:last-child{
+			background: none;
+		}
+
+	
 		#footer {
 			text-align: center;
 			background: #b4c3c3;
