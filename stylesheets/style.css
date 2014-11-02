@@ -4,7 +4,7 @@
 		Headings h1-h6
 		Paragraph
 		Lists
-		Buttons
+		Buttons and forms
 	#Page Styles
 		Header Navigation
 		Header
@@ -84,6 +84,12 @@ h5 {
 	color: #2cefbc;
 }
 
+.testimonials h2 {
+	color: #999;
+	text-align: center;
+		margin-top: 1em;
+}
+
 
 
 /* Paragraph styles */
@@ -108,10 +114,13 @@ header p {
 #foot-links {
 	display: inline-block;
 	float: left;
+	font-size: 14px;
+	text-transform: uppercase;
 }
 #foot-links li:first-child {
-	font-size: 30px;
+	font-size: 18px;
 	line-height: 2;
+	text-transform: uppercase;
 }
 
 #social {
@@ -121,7 +130,7 @@ header p {
 
 
 
-/* buttons */
+/* buttons and forms */
 
 .button,
     button,
@@ -156,14 +165,22 @@ button {
 }
 
 .small-button {
-	font-size: 18px;
+	font-size: 14px;
+	text-transform: uppercase;
 	width: 100px;
 	height: 30px;
 
 }
 
+/* not working
 
+input [email] {
+	height: 50px;
+	width: 10px;
+	border-radius: 5px;
+}
 
+*/
 
 /* #Page Styles
 ================================================== */
@@ -179,15 +196,17 @@ button {
 }
 .left-nav {
 	float:left;
+
 }
 .right-nav {
+
 	float:right;
 	margin-top: 10px;
+	text-transform: uppercase;
 }
 
 header > nav li {
 	display: inline-block;
-
 }
 
 
@@ -223,9 +242,8 @@ header nav ul {
 header nav ul li{
 	display: inline;
 	padding: 0px 20px;
-	font-family: "Helvetica Light", Helvetica, Verdana, sans-serif;
-	font-size: 24px;
-	font-weight: lighter;
+	font-family: Helvetica, Verdana, sans-serif;
+	font-size: 16px;
 	color: #ffffff;
 	list-style-type: none;
 }
@@ -287,13 +305,21 @@ header nav ul li a:hover{
 }
 
 #email {
-	width: 200px;
+	width: 187px;
+	font-size: 18px;
 	margin: 20px 0 5px 0;
+	border-radius: 5px;
+	padding: 2px 6px 3px;
 
 }
 #footer button {
 	text-align: center;
 }
+
+#footer a {
+	text-decoration: none;
+}
+
 
 
 
@@ -302,12 +328,16 @@ header nav ul li a:hover{
 
 .cbp-qtrotator {
     position: relative;
-    margin: 3em auto 5em auto;
+    margin: 2em auto 5em auto;
     max-width: 800px;
     width: 100%;
-    min-height: 400px;
+    min-height: 270px;
 }
  
+ .cbp-qtcontent {
+ 	text-align: center;
+
+ }
 .cbp-qtrotator .cbp-qtcontent {
     position: absolute;
     min-height: 200px;
@@ -325,6 +355,7 @@ header nav ul li a:hover{
 }
  
 /* Currently visible */
+
 .cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent,
 .no-js .cbp-qtrotator .cbp-qtcontent {
     position: relative; 
@@ -332,17 +363,19 @@ header nav ul li a:hover{
     pointer-events: auto;
     opacity: 1;
 }
+ /*
  
 .cbp-qtrotator .cbp-qtcontent:before,
 .cbp-qtrotator .cbp-qtcontent:after {
     content: " ";
     display: table;
 }
- 
+
+
 .cbp-qtrotator .cbp-qtcontent:after {
     clear: both;
 }
- 
+ */
 .cbp-qtprogress {
     position: absolute;
     background: #47a3da;
@@ -353,30 +386,26 @@ header nav ul li a:hover{
 }
  
 .cbp-qtrotator blockquote {
+	border: none;
     margin: 0;
-    padding: 0;
+    line-height: 1.4;
 }
  
 .cbp-qtrotator blockquote p {
-    font-size: 2em;
+    font-size: 1.3em;
     color: #888;
     font-weight: 300;
-    margin: 0.4em 0 1em;
+
 }
  
 .cbp-qtrotator blockquote footer {
-    font-size: 1.2em;
+    font-size: 28px;
+    text-align: center;
 }
  
-.cbp-qtrotator blockquote footer:before {
-    content: '? ';
-}
+
  
-.cbp-qtrotator .cbp-qtcontent img {
-    float: left;
-    margin-left: 3em;
-}
- 
+
 
 
 
@@ -399,8 +428,22 @@ header nav ul li a:hover{
 	   text-align: center;
 	   margin-top: 10px
 		}
+		.right-nav button {
+			border-radius: 0;
+			margin: 0;
+			height: 30px;
+			width: 420px;
+			border: none;
+			text-align: center;
+			padding: 0;
+
+		}
 		.right-nav {
 			float: none;
+			padding: 0;
+			margin: 0;
+			border: 0;
+			clear: both;
 		}
 		.right-nav ul {
 			float:none;
@@ -414,7 +457,12 @@ header nav ul li a:hover{
 			background: none;
 		}
 
-	
+	h1 {
+		font-size: 50px;
+	}
+	header p {
+		font-size: 24px;
+	}
 		#footer {
 			text-align: center;
 			background: #b4c3c3;
@@ -442,9 +490,14 @@ header nav ul li a:hover{
     }
  
     .cbp-qtrotator img {
-        width: 80px;
+        width: 150px;
     }
-
+		.cbp-qtrotator blockquote p {
+    	font-size: 1.3em;
+    	color: #888;
+    	font-weight: 300;
+    	padding: 0;
+}
 
 
 
