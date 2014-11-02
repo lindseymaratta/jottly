@@ -34,7 +34,8 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 	<script src="js/modernizr.custom.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+	</script>
 	<script src="//use.typekit.net/ldx0fvq.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 
@@ -58,8 +59,8 @@
 			</nav>
 			<nav class="right-nav">
 				<ul>
-					<li><a href="#">about</a></li>
-					<li><a href="#">testimonials</a></li>
+					<li><a href="#about">about</a></li>
+					<li><a href="#testimonials">testimonials</a></li>
 					<li><a href="#"><span class="highlight">log in</span></a></li>
 					<li><button class="small-button">sign up</button></li>
 				</ul>
@@ -68,6 +69,8 @@
 		<div id="marketing" class="twelve columns offset-by-two">
 			<h1>A <span class="better">better</span> way<br />
 			to write &amp; collaborate</h1>
+			<br />
+			<br />
 			<p>Jott.ly is an online tool aimed at simplyfing your work, school, and personal life.  Use jott.ly to create and edit documents alongside multiple contributors.</p>
 			<a href="#"><button class="large-button">start today</button></a>
 		</div>
@@ -77,7 +80,8 @@
 
 
 <!--Start How-to Section -->
-<section id="how-to" class="text-inverse">
+<a id="about">
+<section id="how-to" class="text-inverse"></a>
 	<div class="container">
 		<div id="jott" class="one-third column">
 			<img src="images/PENCIL_tilt.svg" width="200" height="200px" />
@@ -103,23 +107,37 @@
 <!--End How-to section -->
 
 <!--Start Testimonials/ Quote Rotator -->
-<section class="testimonials">
+<a id="testimonials">
+<section class="testimonials"></a>
+	<br />
+	<h2>What our users are saying...</h2>
 	<div id="cbp-qtrotator" class="cbp-qtrotator">
 		<div class="cbp-qtcontent">
-	  		<img src="images/1.jpg" alt="img01" />
+	  		<img src="images/avatar1.png" alt="Jane Doe" /><br />
   			<blockquote>
-    			<p>People eat meat and think they will become as strong as an ox, forgetting that the ox eats grass.</p>
-    			<footer>Pino Caruso</footer>
+    			<p>My students use jott.ly to work on their group projects for my class. 
+						It’s helpful for them to be organized, and it helps me make track their progress in real-time. Jott.ly has simplified both classroom and homework.</p>
+    			<footer>Jane Doe, teacher</footer>
   			</blockquote>
 		</div>
 
 		<div class="cbp-qtcontent">
-	  		<img src="images/1.jpg" alt="img01" />
+	  		<img src="images/avatar2.png" alt="Matt Ross" /><br />
   			<blockquote>
-    			<p>hello world! People eat meat and think they will become as strong as an ox, forgetting that the ox eats grass.</p>
-    			<footer>John Doe</footer>
+    			<p>Since I signed up for jott.ly, I’ve seen huge improvements in productivity and efficiency in my work and personal life.  I can share everything with my assistant, and he help keep my work up-to-date as well.</p>
+    			<footer>Matt Ross, consultant</footer>
   			</blockquote>
 		</div>
+
+			<div class="cbp-qtcontent">
+	  		<img src="images/avatar3.png" alt="Paul Smith" /><br />
+  			<blockquote>
+    			<p>I’m not sure how we got on  before jott.ly came along.  We’re all regular contributers to various news and creative articles, and jott.ly enables us to share our research and work together, even when no one’s in the office!</p>
+    			<footer>Paul Smith, designer</footer>
+  			</blockquote>
+		</div>
+
+
 	</div>
 </section>
 <!--End Quote Rotator -->
@@ -130,25 +148,25 @@
 		<nav id="foot-links" class="four columns">
 			<ul>
 				<li>Company</li>
-				<li>about</li>
-				<li>careers</li>
-				<li>blog</li>
-				<li>terms</li>
+				<li><a href="#">about</a></li>
+				<li><a href="#">careers</a></li>
+				<li><a href="#">blog</a></li>
+				<li><a href="#">terms</a></li>
 			</ul>
 		</nav>
 	<nav id="foot-links" class="four columns text-inverse">
 		<ul>
 			<li>Contact</li>
-			<li>support</li>
-			<li>get started</li>
-			<li>live chat</li>
+			<li><a href="#">support</a></li>
+			<li><a href="#">get started</a></li>
+			<li><a href="#">live chat</a></li>
 		</ul>
 	</nav>
 	<nav id="social" class="four columns">
 		<ul>
-			<li><img src="images/facebook.png" /></li>
-			<li><img src="images/twitter.png" /></li>
-			<li><img src="images/instagram.png" /></li>
+			<li><a href="#"><img src="images/facebook.png" /></a></li>
+			<li><a href="#"><img src="images/twitter.png" /></a></li>
+			<li><a href="#"><img src="images/instagram.png" /></a></li>
 		</ul>
 	</nav>
 	<div class="four columns">
@@ -160,6 +178,22 @@
 
 <!-- End Document
 ================================================== -->
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
 	<script src="js/jquery.cbpQTRotator.min.js"></script>
 	<script>
 		$(function() {
