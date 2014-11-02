@@ -53,7 +53,7 @@
 	<div class="container">
 		<div class="sixteen columns">
 			<nav class="left-nav logo">
-				<a href="#" class="logo">
+				<a href="#" onclick="alertMe()" class="logo">
 					<img src="images/jottly-logo.svg">
 				</a>
 			</nav>
@@ -72,7 +72,7 @@
 			<br />
 			<br />
 			<p>Jott.ly is an online tool aimed at simplyfing your work, school, and personal life.  Use jott.ly to create and edit documents alongside multiple contributors.</p>
-			<a href="#"><button class="large-button">start today</button></a>
+			<a href="#" onclick="alertMe()"><button class="large-button">start today</button></a>
 		</div>
 	</div>
 </header>
@@ -194,10 +194,16 @@ $(function() {
   });
 });
 </script>
-<script>
-$('button').click(function(){
+<!-- <script>
+ $('button').click(function(){
 alert('Thank You');
 });
+</script>
+-->
+<script>
+	function alertMe(){
+		alert("Thank you");
+	}
 </script>
 	<script src="js/jquery.cbpQTRotator.min.js"></script>
 	<script>
