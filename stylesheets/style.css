@@ -84,7 +84,7 @@ h5 {
 	color: #2cefbc;
 }
 
-.testimonials h2 {
+.testimonials h3 {
 	color: #999;
 	text-align: center;
 		margin-top: 1em;
@@ -208,7 +208,6 @@ input [email] {
 header > nav li {
 	display: inline-block;
 }
-
 
 
 
@@ -424,18 +423,18 @@ header nav ul li a:hover{
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
 	   .left-nav {
+	   	width: 100%;
 	   	float: none;
 	   text-align: center;
 	   margin-top: 10px
 		}
 		.right-nav button {
 			border-radius: 0;
-			margin: 0;
-			height: 30px;
-			width: 420px;
+			width: 100%;
 			border: none;
 			text-align: center;
-			padding: 0;
+			padding: 25px 0 35px 0;
+			
 
 		}
 		.right-nav {
@@ -450,11 +449,12 @@ header nav ul li a:hover{
 		}
 		.right-nav  ul li {
 			background: rgba(255, 255, 255, .2);
-			padding: 20px;
+			padding: 21px;
 		}
 
-		.right-nav li:last-child{
+		.right-nav li:last-child {
 			background: none;
+			padding: 0;
 		}
 
 	h1 {

@@ -211,7 +211,7 @@ background-color: #176bd7;
 
 /* #Forms
 ================================================== */
-
+/*
 	form {
 		margin-bottom: 20px; }
 	fieldset {
@@ -262,7 +262,12 @@ background-color: #176bd7;
 		font-weight: normal;
 		font-size: 13px;
 		color: #444; }
+*/
 
+button:focus {
+	outline: none;
+
+}
 /* #Misc
 ================================================== */
 	.remove-bottom { margin-bottom: 0 !important; }
