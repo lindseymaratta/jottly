@@ -493,6 +493,10 @@ background: url("../images/instagram.png") 40px 0;
 			padding: 0;
 		}
 
+	#how-to {
+		padding: 40px 0 40px 0;
+	}
+
 	h1 {
 		font-size: 50px;
 	}
