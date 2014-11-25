@@ -492,8 +492,13 @@ background: url("../images/instagram.png") 40px 0;
 			background: none;
 			padding: 0;
 		}
+		
+		header {
+			padding: 0 0 100px 0;
+		}
 
-	#how-to {
+
+		#how-to {
 		padding: 40px 0 40px 0;
 	}
 
